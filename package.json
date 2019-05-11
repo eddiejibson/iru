@@ -1,10 +1,11 @@
 {
   "name": "iru",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Smartly generate a post-based website from Markdown files.",
   "main": "src/iru.js",
+  "browser": "build/iru.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/eddiejibson/iru/issues"
   },
-  "homepage": "https://github.com/eddiejibson/iru#readme"
+  "homepage": "https://github.com/eddiejibson/iru#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "babel-minify": "^0.5.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
 }
