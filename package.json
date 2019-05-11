@@ -1,0 +1,19 @@
+{
+  "name": "iru",
+  "version": "0.0.1",
+  "description": "Smartly generate a post-based website from Markdown files.",
+  "main": "src/iru.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddiejibson/iru.git"
+  },
+  "author": "Edward Jibson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eddiejibson/iru/issues"
+  },
+  "homepage": "https://github.com/eddiejibson/iru#readme"
+}
