@@ -1,6 +1,6 @@
 {
   "name": "iru",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Smartly generate a post-based website from Markdown files.",
   "main": "src/iru.js",
   "browser": "build/iru.js",
