@@ -29,7 +29,7 @@ Setup is really easy with iru. You can copy and paste this example and will only
             //e.g yourdomain.com/#post or not - becoming yourdomain.com/post.
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/iru/build/iru.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iru@1.0.5/build/iru.min.js"></script>
 </body>
 </html>
 
