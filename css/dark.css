@@ -37,7 +37,6 @@ h1 {
 }
 
 .card {
-    width: 100%;
     background-color: #2B2C31;
     border-radius: 5px;
     border: 1px solid #222226;
@@ -81,4 +80,81 @@ h1 {
 
 .card p {
     margin-top: 5px;
+}
+
+.loading {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    overflow: hidden;
+    background-color: #222226;
+}
+
+
+.loading-active {
+    opacity: 1 !important;
+}
+
+.loading-bar {
+    background-color: #4834d4;
+    height: 100%;
+    max-width: 100%;
+    width: 5%;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.0rem;
+}
+
+h4 {
+    font-size: 0.9rem;
+}
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .inner-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .inner-container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inner-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .inner-container {
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+    }
 }

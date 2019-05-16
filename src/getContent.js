@@ -1,9 +1,10 @@
-const regex = { //Some expressions, thought best to save it here
-    title: /# .+/gm
+window.$iru.regex = { //Some expressions, thought best to save it here
+    title: /# .+/
 }
 
 module.exports = (content, title, length) => {
-    let titleReg = regex.title.exec(content);
+    let originalTitle = title;
+    let titleReg = window.$iru.regex.title.exec(content);
     if (titleReg && titleReg[0]) {
         content = content.replace(titleReg[0], "");
         title = titleReg[0].replace("# ", "");
@@ -14,8 +15,21 @@ module.exports = (content, title, length) => {
     if (content.length > length) {
         content = content.substr(0, length) + "..."
     }
-    return {
+
+    let index = window.$iru.postContent.length || 0;
+
+    if (index == 1) {
+        index = 0;
+    }
+
+    let obj = {
         title: title,
-        content: content
+        content: content,
+        index: index,
+        slug: originalTitle
     };
+
+    window.$iru.postContent.push(obj);
+
+    return obj;
 }
