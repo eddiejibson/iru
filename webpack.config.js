@@ -40,6 +40,5 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         mainFields: ['browser', 'main']
-    },
-    watch: true
+    }
 };
