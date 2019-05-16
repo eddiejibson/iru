@@ -23,7 +23,9 @@ module.exports = (to, title, index) => {
         container_reget.innerHTML = String(window.$iru.prev.content);
         history.pushState({}, window.$iru.prev.title, window.$iru.prev.path);
     }
-    window.onhashchange = window.backHome();
+    setTimeout(() => {
+        window.onhashchange = window.backHome();
+    }, 100);
     let formatted_content = marked(window.$iru.postContent[index].content);
     container.innerHTML = `<p class="clickable" onclick="backHome()" style="margin-top: 60px;font-size: 12px;margin-bottom: 4px;">Back home</p><div class='card' ><h1>${title}</h1><div style="line-height:1.2">${formatted_content}</div></div>`;
 }
