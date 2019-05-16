@@ -4,7 +4,7 @@ module.exports = (reset = false) => {
         name: "My Posts",
         posts: false,
         preview_length: 256,
-        hash: false,
+        hash: true,
         root: "/"
     }
     window.$iru = window.$iru || {};
