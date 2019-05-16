@@ -47,5 +47,8 @@ Defined below are the various keys you may set to customize iru within the `wind
 | name          | `"Posts"`   | The header/title of the posts page. |
 | posts         | `false`     |   An array containing all the names of your .md files with the post content in them - without the .md extension. |
 | hash          | `true`      | Should the url for posts utilize a hash e.g `yourdomain.com/#post` or not - becoming `yourdomain.com/post`. If you choose not to use a hash because it looks nicer, you'll need to configure your web server correctly. |
-| root          | `"/"`       | What is the root path (minus the domain and directory) of your posts site? If it's the index, leave it at `/`. However, if for example it's in a HTML file named posts, set it to `"/posts.html"`.` |
+| root          | `"/"`       | What is the root path (minus the domain and directory) of your posts site? If it's the index, leave it at `/`. However, if for example it's in a HTML file named posts, set it to `"/posts.html"`. |
 | preview_length | `256`      | What is the maximum length of a post preview? |
+
+## Roadmap
+- [ ] Render post list on the server - for better SEO.
