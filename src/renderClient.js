@@ -32,7 +32,7 @@ module.exports = (reset = false) => {
         if (settings.posts && Array.isArray(settings.posts) && settings.posts.length > 0 && !settings.static) {
             for (let i = 0; i < settings.posts.length; i++) {
                 let el = settings.posts[i];
-                make_request(`http://127.0.0.1:8080/${el}.md`).then((res) => {
+                make_request(`${document.URL.substr(0,document.URL.lastIndexOf('/'))}/${el}.md`).then((res) => {
                     let content = get_content(res, el, settings.preview_length);
                     container.innerHTML += `<div class='card clickable' onclick="switcher('${content.slug}', '${content.title}', '${content.index}')"><h1>${content.title}</h1><p>${content.content.replace(/#|\*|\`|\||\-|/g, "")}</p></div>`
                 }).catch((err) => {
