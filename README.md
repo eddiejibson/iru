@@ -63,7 +63,7 @@ If you want to send links to posts without a hash, set the key `"hash"` to `fals
 
 1. In your server block, add try_files $uri /index.html =404;
 
-2. Reload Nginx
+2. Reload nginx
 
 ### Apache
 
@@ -75,5 +75,4 @@ If you want to send links to posts without a hash, set the key `"hash"` to `fals
 
 4. In your VirtualHost tag, add ErrorDocument 404 /index.php
 
-5. Restart Apache
-
+5. Restart Apache 
